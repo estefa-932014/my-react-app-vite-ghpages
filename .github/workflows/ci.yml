@@ -1,0 +1,16 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: .github/workflows/build/front/build-ci-react.yml@main
+    with:
+      node-version: '14'
