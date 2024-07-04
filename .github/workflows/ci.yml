@@ -11,8 +11,8 @@ on:
 
 jobs:
   build:
-    uses: .github/workflows/ci.yml@main
+    uses: estefa-932014/my-react-app-vite-ghpages/.github/workflows/ci.yml@main
   call-build:
-      uses: .github/workflows/build/front/build-ci-react.yml@main
+      uses: estefa-932014/devops-templates/.github/workflows/build/front/build-ci-react.yml@main
       with:
         node-version: '14'
