@@ -11,6 +11,8 @@ on:
 
 jobs:
   build:
-    uses: .github/workflows/build/front/build-ci-react.yml@main
-    with:
-      node-version: '14'
+    uses: .github/workflows/ci.yml@main
+  call-build:
+      uses: .github/workflows/build/front/build-ci-react.yml@main
+      with:
+        node-version: '14'
