@@ -11,6 +11,6 @@ on:
 
 jobs:
   call-install-dependencies:
-    uses: estefa-932014/devops-templates/.github/workflows/build/front/install_dependencies.yml@main
+    uses: estefa-932014/devops-templates/.github/workflows/install_dependencies.yml@main
     with:
       node-version: '14'
