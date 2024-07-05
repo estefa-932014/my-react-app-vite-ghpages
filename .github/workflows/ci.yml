@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-install-dependencies:
+  build:
     uses: estefa-932014/devops-templates/.github/workflows/install_dependencies.yml@main
     with:
       node-version: '14'
