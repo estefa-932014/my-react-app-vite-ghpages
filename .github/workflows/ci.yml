@@ -1,8 +1,16 @@
+name: CI Pipeline
 
-    name: Caller Workflow
-    on: [push, pull_request]
-    jobs:
-      build:
-        uses: estefa-932014/my-react-app-vite-ghpages/.github/workflows/build/front/build-ci-react.yml@main
-        with:
-          node-version: '14'
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  call-install-dependencies:
+    uses: estefa-932014/devops-templates/.github/workflows/build-ci-react.yml@main
+    with:
+      node-version: '14'
