@@ -12,6 +12,6 @@ on:
 jobs:
   # Build Job
   build:
-    uses: estefa-932014/devops-templates/.github/workflows/main.yml@main
+    uses: estefa-932014/devops-templates/.github/workflows/build-react.yml@main
     with:
       node-version: '18.x'
