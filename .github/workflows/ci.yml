@@ -13,4 +13,4 @@ jobs:
   build:
     uses: estefa-932014/devops-templates/.github/workflows/main.yml@main
     with:
-      node-version: '14'
+      node-version: '18.x'
