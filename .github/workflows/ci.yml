@@ -15,8 +15,4 @@ jobs:
     uses: estefa-932014/devops-templates/.github/workflows/build-react.yml@main
     with:
       node-version: '18.x'
-      
-  build-test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "variable" ${{ secrets.PAT_TOKEN }}
+      github_token: ${{ secrets.PAT_TOKEN }}
