@@ -16,4 +16,4 @@ jobs:
     with:
       node-version: '18.x'
     secrets:
-      github_token: ${{ secrets.PAT_TOKEN }}
+      conexion_token: ${{ secrets.PAT_TOKEN }}
