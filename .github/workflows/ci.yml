@@ -15,4 +15,5 @@ jobs:
     uses: estefa-932014/devops-templates/.github/workflows/build-react.yml@main
     with:
       node-version: '18.x'
+    secrets:
       github_token: ${{ secrets.PAT_TOKEN }}
