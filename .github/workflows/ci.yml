@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: Build & Deploy Github Pages
 
 on:
   push:
